@@ -22,9 +22,10 @@ function TodoInput(props) {
       />
       <button className="add-btn" 
       onClick={()=>{
+        console.log('onClick');
         props.addList(inputText)
         setInputText("")
-      }}>+</button>      
+      }}>+</button>    
     </div>
   );
 }
